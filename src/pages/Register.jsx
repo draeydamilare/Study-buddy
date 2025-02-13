@@ -33,7 +33,7 @@ const Register = () => {
                     toast.success("Registeration is successful", {
                         className:'bg-green-300 text-white'
                     })
-                    navigate('/login');
+                    navigate('/');
                 }
             } catch (error) {
                 if (error) {
