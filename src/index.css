@@ -1,2 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+    --radius: 0.6rem;
+}
+
+@theme inline {
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+
+    --color-primary: #3A5AFF;
+}
+
+*{
+    font-family: "Montserrat", serif !important;
+}
+
+/* Apply background color for error toasts */
+.Toastify__toast--error {
+    background: #ff5252 !important;
+    color: white !important;
+  }
+/* Apply background color for error toasts */
+.Toastify__toast--success {
+    background: #52ffa6 !important;
+    color: white !important;
+  }
+
+
 
